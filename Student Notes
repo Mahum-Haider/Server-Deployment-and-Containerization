@@ -1,3 +1,10 @@
+.env_file:
+JWT_SECRET='myjwtsecret'
+LOG_LEVEL=DEBUG
+
+
+
+ELB URL:
 NAME             TYPE           CLUSTER-IP       EXTERNAL-IP                                                             PORT(S)        AGE
 kubernetes       ClusterIP      10.100.0.1       <none>                                                                  443/TCP        95m
 simple-jwt-api   LoadBalancer   10.100.138.127   a861d772aa2884ddd9300d33b6172b59-79760860.us-east-2.elb.amazonaws.com   80:32300/TCP   68m
@@ -6,4 +13,5 @@ simple-jwt-api   LoadBalancer   10.100.138.127   a861d772aa2884ddd9300d33b6172b5
 
 NAME             TYPE           CLUSTER-IP       EXTERNAL-IP                                                             PORT(S)        AGE   SELECTOR
 simple-jwt-api   LoadBalancer   10.100.138.127   a861d772aa2884ddd9300d33b6172b59-79760860.us-east-2.elb.amazonaws.com   80:32300/TCP   69m   app=simple-jwt-api
+
 
